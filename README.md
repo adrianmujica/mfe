@@ -19,5 +19,8 @@ On each folder you will find a readme.md explained what I did to build each appl
     - ng serve
 
   - mfe2 app (localhost:3000)
-
+    I had to use yarn because with npm some webpack commands doens't work with the version 16.14.0 of node.
+    yarn version: 1.22.18
+    - yarn
+    - yarn webpack serve 
 
