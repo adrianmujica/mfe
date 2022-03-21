@@ -25,3 +25,9 @@ On each folder you will find a readme.md explained what I did to build each appl
   </br> **yarn version: 1.22.18**
     - yarn
     - yarn webpack serve 
+    
+   ## References
+   - [Angular module federation](https://github.com/angular-architects/module-federation-plugin/blob/main/libs/mf/README.md)
+   - [Webpack module federation](https://webpack.js.org/concepts/module-federation/)
+   - [React Webpack5 module federation](https://levelup.gitconnected.com/micro-frontends-step-by-step-using-react-webpack-5-and-module-federation-e4b9d840ec71)
+   - [Micro Frontends with Module Federation and Angular 12](https://www.youtube.com/watch?v=ZoLzWVi34GE&ab_channel=NG-Poland)
