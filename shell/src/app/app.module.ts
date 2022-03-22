@@ -7,6 +7,8 @@ import { RouterModule } from "@angular/router";
 import { loadRemoteModule } from "@angular-architects/module-federation";
 import { WebComponentWrapper, WebComponentWrapperOptions, } from "@angular-architects/module-federation-tools";
 
+import { TranslationService } from 'translation-service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,21 +40,9 @@ import { WebComponentWrapper, WebComponentWrapperOptions, } from "@angular-archi
           elementName: 'react-element',
         } as WebComponentWrapperOptions
       }
-      // {
-      //   path: 'mfe2',
-      //   loadChildren: () => loadRemoteModule({
-      //     type: 'script',
-      //     remoteEntry: 'http://localhost:3000/remoteEntry.js',
-      //     exposedModule: './web-component',
-      //     remoteName: 'mfe2'
-      //   }).then(m => {
-      //     console.log('SANCO ', m);
-      //     return m.Module;
-      //   })
-      // }
     ], {initialNavigation: "enabledBlocking"})
   ],
-  providers: [],
+  providers: [TranslationService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
