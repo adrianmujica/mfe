@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslationService} from 'translation-service'
 
 @Component({
@@ -8,10 +8,17 @@ import { TranslationService} from 'translation-service'
 })
 export class AppComponent {
   title = 'shell';
+  lang?: string;
 
   constructor(private translateService: TranslationService) {
     this.translateService.onLangChanged().subscribe((value) => {
-      console.log('Changed language: ', value);
-    })
+      console.log('Changed language shell: ', value);
+      // TODO: we should set the lang variable the first time that loads app
+      this.lang = value;
+    });
+  }
+
+  setLang(lang: string) {
+    this.translateService.setLang(lang);
   }
 }

@@ -8,6 +8,8 @@ import { RouterModule } from "@angular/router";
 import { HomeModule } from "./home/home.module";
 import { HomeComponent } from "./home/home.component";
 
+import { TranslationService } from 'translation-service'; 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -16,7 +18,7 @@ import { HomeComponent } from "./home/home.component";
     BrowserModule,
     RouterModule.forRoot([{path: '', component: HomeComponent}], {initialNavigation: "enabledBlocking"})
   ],
-  providers: [],
+  providers: [TranslationService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
