@@ -1,9 +1,10 @@
 # Microfrontend project
 
-On this workshop I'm expose an Angular app shell that loads:
+On this workshop I'm expose an Angular app shell that contains:
   - HomeComponent from shell app.
   - MFE1 isolated angular app
   - MFE2 isolated react app
+  - translation-service shared library between mfe
 
 On each folder you will find a readme.md explained what I did to build each application and connect it with the shell application.
 
